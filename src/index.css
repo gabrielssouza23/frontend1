@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,19 +36,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -97,5 +91,97 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Courier New', monospace;
+    background: linear-gradient(135deg, #0f0f23 0%, #1a0033 50%, #000000 100%);
+    min-height: 100vh;
   }
+}
+
+@layer utilities {
+  .glow-text {
+    text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+  }
+  
+  .cyber-border {
+    position: relative;
+    border: 2px solid transparent;
+    background: linear-gradient(45deg, #00ffff, #ff00ff) border-box;
+    border-radius: 8px;
+  }
+  
+  .cyber-border::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    margin: -2px;
+    border-radius: inherit;
+    background: linear-gradient(45deg, #00ffff, #ff00ff);
+  }
+
+  .neon-glow {
+    box-shadow: 
+      0 0 5px theme('colors.cyan.400'),
+      0 0 10px theme('colors.cyan.400'),
+      0 0 15px theme('colors.cyan.400'),
+      0 0 20px theme('colors.cyan.400'),
+      0 0 35px theme('colors.cyan.400'),
+      0 0 40px theme('colors.cyan.400');
+  }
+
+  .neon-glow-pink {
+    box-shadow: 
+      0 0 5px theme('colors.pink.400'),
+      0 0 10px theme('colors.pink.400'),
+      0 0 15px theme('colors.pink.400'),
+      0 0 20px theme('colors.pink.400'),
+      0 0 35px theme('colors.pink.400'),
+      0 0 40px theme('colors.pink.400');
+  }
+}
+
+/* Cyberpunk scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #00ffff, #ff00ff);
+  border-radius: 10px;
+  border: 2px solid #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #00dddd, #dd00dd);
+}
+
+/* Cyberpunk animations */
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    text-shadow: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor;
+  }
+  50% {
+    text-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor, 0 0 40px currentColor;
+  }
+}
+
+.flicker {
+  animation: flicker 2s infinite;
+}
+
+.glow-pulse {
+  animation: glow-pulse 2s ease-in-out infinite;
 }
