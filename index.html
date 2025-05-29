@@ -1,27 +1,142 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>João Silva - Site Pessoal</title>
-    <meta name="description" content="Site pessoal de João Silva - Desenvolvedor Full Stack & Designer" />
-    <meta name="author" content="João Silva" />
-
-    <meta property="og:title" content="João Silva - Site Pessoal" />
-    <meta property="og:description" content="Site pessoal de João Silva - Desenvolvedor Full Stack & Designer" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <title>Gabriel de Souza Silva - Desenvolvedor Full Stack & Designer</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="nav-left">
+          <h1 class="logo">Gabriel Souza<span class="logo-cursor">_</span></h1>
+        </div>
+        <div class="nav-right">
+          <a href="index.html" class="nav-link active">Início</a>
+          <a href="about.html" class="nav-link">Sobre</a>
+          <a href="projects.html" class="nav-link">Projetos</a>
+          <a href="contact.html" class="nav-link">Contato</a>
+          <a href="schedule.html" class="nav-link">Agendar</a>
+          <a href="resume.html" class="nav-link">Currículo</a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <img src="./pog.png" alt="Gabriel de Souza Silva" class="profile-image" />
+          <h1 class="gradient-text">Gabriel de Souza Silva</h1>
+          <p class="subtitle">Desenvolvedor Full Stack</p>
+          <div class="hero-buttons">
+            <a href="resume.html" class="btn primary-btn">Download CV</a>
+            <a href="schedule.html" class="btn secondary-btn">Agendar Reunião</a>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/gabriel-de-souza-silva23/" target="_blank" class="social-link">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                alt="LinkedIn"
+              />
+            </a>
+            <a href="https://github.com/gabrielssouza23" target="_blank" class="social-link">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-projects">
+      <div class="container">
+        <h2 class="section-title gradient-text">Projetos em Destaque</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img src="carboprint.png" alt="Projeto 1" class="project-image" />
+            <h3>Carbonífera Biodiversa</h3>
+            <p>Frontend com React e tailwind css</p>
+            <a href="https://carbonifera-biodiversa.vercel.app/" class="btn outline-btn">Ver Projeto</a>
+          </div>
+
+          <div class="project-card">
+            <img src="carboprint.png" alt="Projeto 2" class="project-image" />
+            <h3>Carbonífera Biodiversa API</h3>
+            <p>API com Node.js e fastify</p>
+            <a href="https://carbonifera-biodiversa.vercel.app/" class="btn outline-btn">Ver Projeto</a>
+          </div>
+
+          <div class="project-card">
+            <img
+              src="news.png"
+              alt="Projeto 3"
+              class="project-image"
+            />
+            <h3>News App com News Api</h3>
+            <p>Página de notícias com Next.js, TypeScript, News Api e Tailwind CSS</p>
+            <a href="https://github.com/gabrielssouza23/newsNext/tree/master" class="btn outline-btn">Ver Projeto</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills-section">
+      <div class="container">
+        <h2 class="section-title gradient-text">Habilidades</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <ul class="skills-list">
+              <li>HTML5 & CSS3</li>
+              <li>JavaScript</li>
+              <li>React.js</li>
+              <li>Next.js</li>
+              <li>TypeScript</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <h3>Backend</h3>
+            <ul class="skills-list">
+              <li>Node.js</li>
+              <li>Next.js</li>
+              <li>TypeScript</li>
+              <li>PHP</li>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>REST APIs</li>
+              <li>AWS</li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <h3>Ferramentas</h3>
+            <ul class="skills-list">
+              <li>GitHub</li>
+              <li>Git</li>
+              <li>AWS</li>
+              <li>AI</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3>Gabriel de Souza Silva</h3>
+            <p>Desenvolvedor Full Stack</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Gabriel de Souza Silva. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

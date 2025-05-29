@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar - Gabriel de Souza Silva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-left">
+                <h1 class="logo">Gabriel Souza<span class="logo-cursor">_</span></h1>
+            </div>
+            <div class="nav-right">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="about.html" class="nav-link">Sobre</a>
+                <a href="projects.html" class="nav-link">Projetos</a>
+                <a href="contact.html" class="nav-link">Contato</a>
+                <a href="schedule.html" class="nav-link active">Agendar</a>
+                <a href="resume.html" class="nav-link">Currículo</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="gradient-text">Agendar Reunião</h1>
+            <p class="subtitle">Vamos conversar sobre seu projeto</p>
+        </div>
+    </section>
+
+    <section class="schedule-section">
+        <div class="container">
+            <div class="schedule-grid">
+                <div class="schedule-info">
+                    <h2 class="section-title gradient-text">Informações da Reunião</h2>
+                    <div class="schedule-details">
+                        <div class="schedule-item">
+                            <h3>Duração</h3>
+                            <p>30 minutos</p>
+                        </div>
+                        <div class="schedule-item">
+                            <h3>Formato</h3>
+                            <p>Videoconferência (Google Meet)</p>
+                        </div>
+                        <div class="schedule-item">
+                            <h3>Idioma</h3>
+                            <p>Português ou Inglês</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule-form">
+                    <h2 class="section-title gradient-text">Agende sua Reunião</h2>
+                    <form id="scheduleForm">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Data</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Horário</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem (opcional)</label>
+                            <textarea id="message" name="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Agendar Reunião</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Gabriel de Souza Silva</h3>
+                    <p>Desenvolvedor Full Stack</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gabriel de Souza Silva. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
