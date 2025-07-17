@@ -22,71 +22,96 @@
             </div>
         </div>
     </nav>
-
-    <section class="page-hero">
-        <div class="container">
-            <h1 class="gradient-text">Agendar Reunião</h1>
-            <p class="subtitle">Vamos conversar sobre seu projeto</p>
-        </div>
-    </section>
-
-    <section class="schedule-section">
-        <div class="container">
-            <div class="schedule-grid">
-                <div class="schedule-info">
-                    <h2 class="section-title gradient-text">Informações da Reunião</h2>
-                    <div class="schedule-details">
-                        <div class="schedule-item">
-                            <h3>Duração</h3>
-                            <p>30 minutos</p>
-                        </div>
-                        <div class="schedule-item">
-                            <h3>Formato</h3>
-                            <p>Videoconferência (Google Meet)</p>
-                        </div>
-                        <div class="schedule-item">
-                            <h3>Idioma</h3>
-                            <p>Português ou Inglês</p>
+    <main class="main-layout">
+      <section class="main-left">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="gradient-text">Agendar Reunião</h1>
+                <p class="subtitle">Vamos conversar sobre seu projeto</p>
+            </div>
+        </section>
+        <section class="schedule-section">
+            <div class="container">
+                <div class="schedule-grid">
+                    <div class="schedule-info">
+                        <h2 class="section-title gradient-text">Informações da Reunião</h2>
+                        <div class="schedule-details">
+                            <div class="schedule-item">
+                                <h3>Duração</h3>
+                                <p>30 minutos</p>
+                            </div>
+                            <div class="schedule-item">
+                                <h3>Formato</h3>
+                                <p>Videoconferência (Google Meet)</p>
+                            </div>
+                            <div class="schedule-item">
+                                <h3>Idioma</h3>
+                                <p>Português ou Inglês</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="schedule-form">
-                    <h2 class="section-title gradient-text">Agende sua Reunião</h2>
-                    <form id="scheduleForm">
-                        <div class="form-group">
-                            <label for="name">Nome</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="date">Data</label>
-                            <input type="date" id="date" name="date" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="time">Horário</label>
-                            <input type="time" id="time" name="time" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Mensagem (opcional)</label>
-                            <textarea id="message" name="message" rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btn primary-btn">Agendar Reunião</button>
-                    </form>
+                    <div class="schedule-form">
+                        <h2 class="section-title gradient-text">Agende sua Reunião</h2>
+                        <form id="scheduleForm">
+                            <div class="form-group">
+                                <label for="name">Nome</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Data</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Horário</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem (opcional)</label>
+                                <textarea id="message" name="message" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn primary-btn">Agendar Reunião</button>
+                        </form>
+                    </div>
                 </div>
             </div>
+        </section>
+      </section>
+      <aside class="main-right">
+        <div class="sidebar-box">
+          <h2>Favoritos</h2>
+          <ul class="sidebar-list">
+            <li><a href="https://carbonifera-biodiversa.vercel.app/" target="_blank">Carbonífera Biodiversa</a></li>
+            <li><a href="https://github.com/gabrielssouza23/newsNext" target="_blank">News App</a></li>
+            <li><a href="https://github.com/gabrielssouza23" target="_blank">GitHub</a></li>
+          </ul>
         </div>
-    </section>
-
-    <footer class="footer">
+        <div class="sidebar-box">
+          <h2>Contatos</h2>
+          <ul class="sidebar-list">
+            <li>Email: gabriel.desouzasilva2014@gmail.com</li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/gabriel-de-souza-silva23/" target="_blank">Perfil</a></li>
+            <li>WhatsApp: (51) 99915-2266</li>
+          </ul>
+        </div>
+        <div class="sidebar-box sidebar-photo">
+          <img src="pog.png" alt="Foto Gabriel" style="width:100%;border-radius:12px;opacity:0.85;" />
+        </div>
+      </aside>
+    </main>
+    <footer class="footer improved-footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
                     <h3>Gabriel de Souza Silva</h3>
                     <p>Desenvolvedor Full Stack</p>
+                </div>
+                <div class="footer-social">
+                  <a href="https://www.linkedin.com/in/gabriel-de-souza-silva23/" target="_blank">LinkedIn</a> |
+                  <a href="https://github.com/gabrielssouza23" target="_blank">GitHub</a>
                 </div>
             </div>
             <div class="footer-bottom">

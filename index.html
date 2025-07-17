@@ -6,7 +6,6 @@
     <title>Gabriel de Souza Silva - Desenvolvedor Full Stack & Designer</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
     <nav class="nav">
       <div class="nav-container">
@@ -23,114 +22,129 @@
         </div>
       </div>
     </nav>
-
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <img src="./pog.png" alt="Gabriel de Souza Silva" class="profile-image" />
-          <h1 class="gradient-text">Gabriel de Souza Silva</h1>
-          <p class="subtitle">Desenvolvedor Full Stack</p>
-          <div class="hero-buttons">
-            <a href="resume.html" class="btn primary-btn">Download CV</a>
-            <a href="schedule.html" class="btn secondary-btn">Agendar Reunião</a>
+    <main class="main-layout">
+      <section class="main-left">
+        <!-- Conteúdo variável da página -->
+        <section class="hero">
+          <div class="container">
+            <div class="hero-content">
+              <img src="./pog.png" alt="Gabriel de Souza Silva" class="profile-image" />
+              <h1 class="gradient-text">Gabriel de Souza Silva</h1>
+              <p class="subtitle">Desenvolvedor Full Stack</p>
+              <div class="hero-buttons">
+                <a href="resume.html" class="btn primary-btn">Download CV</a>
+                <a href="schedule.html" class="btn secondary-btn">Agendar Reunião</a>
+              </div>
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/gabriel-de-souza-silva23/" target="_blank" class="social-link">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+                </a>
+                <a href="https://github.com/gabrielssouza23" target="_blank" class="social-link">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/gabriel-de-souza-silva23/" target="_blank" class="social-link">
-              <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-                alt="LinkedIn"
-              />
-            </a>
-            <a href="https://github.com/gabrielssouza23" target="_blank" class="social-link">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
-            </a>
+        </section>
+        <section class="featured-projects">
+          <div class="container">
+            <h2 class="section-title gradient-text">Projetos em Destaque</h2>
+            <div class="projects-grid">
+              <div class="project-card">
+                <img src="carboprint.png" alt="Projeto 1" class="project-image" />
+                <h3>Carbonífera Biodiversa</h3>
+                <p>Frontend com React e tailwind css</p>
+                <a href="https://carbonifera-biodiversa.vercel.app/" class="btn outline-btn">Ver Projeto</a>
+              </div>
+              <div class="project-card">
+                <img src="carboprint.png" alt="Projeto 2" class="project-image" />
+                <h3>Carbonífera Biodiversa API</h3>
+                <p>API com Node.js e fastify</p>
+                <a href="https://carbonifera-biodiversa.vercel.app/" class="btn outline-btn">Ver Projeto</a>
+              </div>
+              <div class="project-card">
+                <img src="news.png" alt="Projeto 3" class="project-image" />
+                <h3>News App com News Api</h3>
+                <p>Página de notícias com Next.js, TypeScript, News Api e Tailwind CSS</p>
+                <a href="https://github.com/gabrielssouza23/newsNext/tree/master" class="btn outline-btn">Ver Projeto</a>
+              </div>
+            </div>
           </div>
+        </section>
+        <section class="skills-section">
+          <div class="container">
+            <h2 class="section-title gradient-text">Habilidades</h2>
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h3>Frontend</h3>
+                <ul class="skills-list">
+                  <li>HTML5 & CSS3</li>
+                  <li>JavaScript</li>
+                  <li>React.js</li>
+                  <li>Next.js</li>
+                  <li>TypeScript</li>
+                  <li>Tailwind CSS</li>
+                </ul>
+              </div>
+              <div class="skill-category">
+                <h3>Backend</h3>
+                <ul class="skills-list">
+                  <li>Node.js</li>
+                  <li>Next.js</li>
+                  <li>TypeScript</li>
+                  <li>PHP</li>
+                  <li>Python</li>
+                  <li>SQL</li>
+                  <li>REST APIs</li>
+                  <li>AWS</li>
+                </ul>
+              </div>
+              <div class="skill-category">
+                <h3>Ferramentas</h3>
+                <ul class="skills-list">
+                  <li>GitHub</li>
+                  <li>Git</li>
+                  <li>AWS</li>
+                  <li>AI</li>
+                  <li>Figma</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <aside class="main-right">
+        <div class="sidebar-box">
+          <h2>Favoritos</h2>
+          <ul class="sidebar-list">
+            <li><a href="https://carbonifera-biodiversa.vercel.app/" target="_blank">Carbonífera Biodiversa</a></li>
+            <li><a href="https://github.com/gabrielssouza23/newsNext" target="_blank">News App</a></li>
+            <li><a href="https://github.com/gabrielssouza23" target="_blank">GitHub</a></li>
+          </ul>
         </div>
-      </div>
-    </section>
-
-    <section class="featured-projects">
-      <div class="container">
-        <h2 class="section-title gradient-text">Projetos em Destaque</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <img src="carboprint.png" alt="Projeto 1" class="project-image" />
-            <h3>Carbonífera Biodiversa</h3>
-            <p>Frontend com React e tailwind css</p>
-            <a href="https://carbonifera-biodiversa.vercel.app/" class="btn outline-btn">Ver Projeto</a>
-          </div>
-
-          <div class="project-card">
-            <img src="carboprint.png" alt="Projeto 2" class="project-image" />
-            <h3>Carbonífera Biodiversa API</h3>
-            <p>API com Node.js e fastify</p>
-            <a href="https://carbonifera-biodiversa.vercel.app/" class="btn outline-btn">Ver Projeto</a>
-          </div>
-
-          <div class="project-card">
-            <img
-              src="news.png"
-              alt="Projeto 3"
-              class="project-image"
-            />
-            <h3>News App com News Api</h3>
-            <p>Página de notícias com Next.js, TypeScript, News Api e Tailwind CSS</p>
-            <a href="https://github.com/gabrielssouza23/newsNext/tree/master" class="btn outline-btn">Ver Projeto</a>
-          </div>
+        <div class="sidebar-box">
+          <h2>Contatos</h2>
+          <ul class="sidebar-list">
+            <li>Email: gabriel.desouzasilva2014@gmail.com</li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/gabriel-de-souza-silva23/" target="_blank">Perfil</a></li>
+            <li>WhatsApp: (51) 99915-2266</li>
+          </ul>
         </div>
-      </div>
-    </section>
-
-    <section class="skills-section">
-      <div class="container">
-        <h2 class="section-title gradient-text">Habilidades</h2>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h3>Frontend</h3>
-            <ul class="skills-list">
-              <li>HTML5 & CSS3</li>
-              <li>JavaScript</li>
-              <li>React.js</li>
-              <li>Next.js</li>
-              <li>TypeScript</li>
-              <li>Tailwind CSS</li>
-            </ul>
-          </div>
-
-          <div class="skill-category">
-            <h3>Backend</h3>
-            <ul class="skills-list">
-              <li>Node.js</li>
-              <li>Next.js</li>
-              <li>TypeScript</li>
-              <li>PHP</li>
-              <li>Python</li>
-              <li>SQL</li>
-              <li>REST APIs</li>
-              <li>AWS</li>
-            </ul>
-          </div>
-
-          <div class="skill-category">
-            <h3>Ferramentas</h3>
-            <ul class="skills-list">
-              <li>GitHub</li>
-              <li>Git</li>
-              <li>AWS</li>
-              <li>AI</li>
-              <li>Figma</li>
-            </ul>
-          </div>
+        <div class="sidebar-box sidebar-photo">
+          <img src="pog.png" alt="Foto Gabriel" style="width:100%;border-radius:12px;opacity:0.85;" />
         </div>
-      </div>
-    </section>
-
-    <footer class="footer">
+      </aside>
+    </main>
+    <footer class="footer improved-footer">
       <div class="container">
         <div class="footer-content">
           <div class="footer-info">
             <h3>Gabriel de Souza Silva</h3>
             <p>Desenvolvedor Full Stack</p>
+          </div>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/gabriel-de-souza-silva23/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/gabrielssouza23" target="_blank">GitHub</a>
           </div>
         </div>
         <div class="footer-bottom">

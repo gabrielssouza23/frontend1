@@ -623,7 +623,7 @@ a:hover {
 .footer {
     background-color: var(--background-alt);
     padding: 6rem 0 2rem;
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
     border-top: 4px solid var(--primary-color);
     box-shadow: 0 -4px 6px -1px rgba(0, 255, 255, 0.2);
 }
@@ -958,4 +958,95 @@ a:hover {
     .skills-list li {
         font-size: 1rem;
     }
+} 
+
+/* Layout principal em duas colunas */
+.main-layout {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--background-color), #4c1d95, var(--background-alt));
+}
+.main-left {
+  flex: 2;
+  /* padding: 2rem 2rem 2rem 0; */
+  background: rgba(10, 15, 28, 0.95);
+  min-width: 0;
+}
+.main-right {
+  flex: 1;
+  padding: 2rem 1.5rem;
+  background: rgba(0, 0, 0, 0.7);
+  border-left: 2px solid var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 320px;
+  max-width: 400px;
+}
+.sidebar-box {
+  background: rgba(0, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 12px 0 rgba(0,255,255,0.07);
+  border: 1px solid var(--border-color);
+}
+.sidebar-box h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  color: var(--text-light);
+}
+.sidebar-list li {
+  margin-bottom: 0.7rem;
+  font-size: 1rem;
+  opacity: 0.95;
+}
+.sidebar-photo img {
+  width: 100%;
+  border-radius: 12px;
+  opacity: 0.85;
+  box-shadow: 0 2px 12px 0 rgba(0,255,255,0.07);
+}
+/* Rodapé melhorado */
+.footer.improved-footer {
+  background: linear-gradient(90deg, #0a0f1c 60%, #111827 100%);
+  border-top: 3px solid var(--primary-color);
+  box-shadow: 0 -2px 12px 0 rgba(0,255,255,0.07);
+  padding-top: 2rem;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer-social a {
+  color: var(--primary-color);
+  margin: 0 0.5rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.footer-social a:hover {
+  color: var(--secondary-color);
+}
+@media (max-width: 1024px) {
+  .main-layout {
+    flex-direction: column;
+  }
+  .main-right {
+    max-width: 100%;
+    min-width: 0;
+    border-left: none;
+    border-top: 2px solid var(--primary-color);
+    padding: 1.5rem 1rem;
+  }
+  .main-left {
+    padding: 2rem 1rem 1rem 1rem;
+  }
 } 
